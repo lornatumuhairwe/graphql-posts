@@ -8,4 +8,6 @@ Types::MutationType = GraphQL::ObjectType.define do
       "Hello World!"
     }
   end
+
+  field :createPost, function: Resolvers::CreatePost.new
 end
