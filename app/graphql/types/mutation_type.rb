@@ -10,4 +10,6 @@ Types::MutationType = GraphQL::ObjectType.define do
   end
 
   field :createPost, function: Resolvers::CreatePost.new
+
+  field :fetchSpecificPost, function: Resolvers::FetchSpecificPost.new
 end
